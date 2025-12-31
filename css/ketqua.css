@@ -1,0 +1,265 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #eef2f7;
+  color: #333;
+}
+
+/* ===== HEADER (GIỮ NGUYÊN) ===== */
+.header {
+  background: linear-gradient(135deg, #1e4adb, #0d3ba8);
+  padding: 22px 0;
+  text-align: center;
+}
+
+.logo img {
+  width: 68px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.logo h1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #4dda70;
+}
+
+.logo h3 {
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: #16e142;
+}
+
+/* ===== TITLE ===== */
+h2 {
+  text-align: center;
+  margin: 35px 0 25px;
+  font-size: 28px;
+  color: #0d6efd;
+  font-weight: 600;
+}
+
+/* ===== BOX ===== */
+.box {
+  background: #fff;
+  border-radius: 14px;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== SUB TITLE ===== */
+.box h3 {
+  color: #0d6efd;
+  margin-bottom: 20px;
+  font-size: 20px;
+  border-bottom: 2px solid #e6ecff;
+  padding-bottom: 10px;
+}
+
+/* ===== LABEL & INPUT ===== */
+label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 6px;
+  color: #444;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.15);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ===== BUTTON ===== */
+button {
+  background: linear-gradient(135deg, #0d6efd, #084298);
+  color: #fff;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.logout-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.logout-btn {
+  background: #dc3545;
+}
+
+/* ===== RESULT ITEM ===== */
+.result-item {
+  background: #f9fbff;
+  padding: 18px;
+  border-radius: 10px;
+  border-left: 4px solid #0d6efd;
+  margin-bottom: 15px;
+}
+
+.result-item b {
+  color: #0d6efd;
+}
+
+.result-item p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+/* ===== ACTIONS ===== */
+.actions {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #ddd;
+}
+
+.actions button {
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+.actions button:first-child {
+  background: #ffc107;
+  color: #000;
+}
+
+.actions button:last-child {
+  background: #dc3545;
+}
+
+/* ===== LOGIN MESSAGE ===== */
+#loginMsg {
+  margin-top: 10px;
+  color: #dc3545;
+  font-weight: 500;
+}
+
+/* ========================================
+   RESPONSIVE CHO CÁC KÍCH THƯỚC MÀN HÌNH
+======================================== */
+
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+        padding: 18px 0;
+    }
+    
+    .logo img {
+        width: 55px;
+    }
+    
+    .logo h1 {
+        font-size: 22px;
+    }
+    
+    .logo h3 {
+        font-size: 11px;
+    }
+    
+    /* Title */
+    h2 {
+        font-size: 22px;
+        margin: 25px 0 20px;
+    }
+    
+    /* Box */
+    .box {
+        padding: 20px;
+        margin: 15px;
+    }
+    
+    .box h3 {
+        font-size: 18px;
+    }
+    
+    /* Input */
+    input,
+    textarea {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+    
+    /* Button */
+    button {
+        width: 100%;
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+    
+    /* Logout */
+    .logout-container {
+        margin: 0 15px;
+    }
+    
+    /* Result Item */
+    .result-item {
+        padding: 15px;
+    }
+    
+    .result-item p {
+        font-size: 13px;
+    }
+    
+    /* Actions */
+    .actions button {
+        width: 100%;
+        margin-bottom: 8px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 50px;
+    }
+    
+    .logo h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .box {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .box h3 {
+        font-size: 16px;
+    }
+}

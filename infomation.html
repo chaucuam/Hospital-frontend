@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đặt lịch khám | Bệnh viện Việt Hoàng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/infomation.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img
+          src="https://i.pinimg.com/736x/e7/a7/16/e7a716a7ec9465dac7b0b259912e890c.jpg"
+          alt="Logo"
+        />
+        <h1>VIET HOANG</h1>
+        <h3>HOSPITAL</h3>
+      </div>
+    </header>
+
+    <section class="info-container">
+      <h2>ĐẶT LỊCH KHÁM BỆNH</h2>
+
+      
+      <form id="appointmentForm" class="info-form">
+        <!-- Họ tên + Email -->
+        <div class="row">
+          <div class="form-group">
+            <label>Họ và tên <span>*</span></label>
+            <input
+              type="text"
+              name="fullName"
+              placeholder="Nhập họ và tên"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email" />
+          </div>
+        </div>
+
+        <!-- SĐT -->
+        <div class="form-group">
+          <label>Số điện thoại <span>*</span></label>
+          <input
+            type="text"
+            name="phone"
+            placeholder="Số điện thoại"
+            required
+          />
+        </div>
+
+        <!-- Khoa -->
+        <div class="form-group">
+          <label>Chọn khoa <span>*</span></label>
+          <select name="department" required>
+            <option value="">-- Chọn khoa --</option>
+            <option>Khoa Nội</option>
+            <option>Khoa Ngoại</option>
+            <option>Khoa Sản</option>
+            <option>Răng – Hàm – Mặt</option>
+          </select>
+        </div>
+
+        <!-- Ngày khám -->
+        <div class="form-group">
+          <label>Ngày khám <span>*</span></label>
+          <input type="date" name="date" required />
+        </div>
+
+        <!-- Lý do -->
+        <div class="form-group">
+          <label>Lý do khám</label>
+          <textarea
+            name="note"
+            rows="4"
+            placeholder="Mô tả tình trạng sức khỏe..."
+          ></textarea>
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" required />
+          <span
+            >Tôi đồng ý với điều khoản dịch vụ <span class="star">*</span></span
+          >
+        </div>
+
+        <button type="submit" class="btn-submit">ĐẶT LỊCH KHÁM</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Bệnh viện Việt Hoàng. All rights reserved.</p>
+    </footer>
+
+   
+    <script src="js/infomation.js"></script>  
+  </body>
+</html>
